@@ -25,6 +25,9 @@ mongoose.connect("mongodb+srv://muhammadwaqasdev:waqads000000@cluster0.sddirdk.m
     //Auth Apis
     const authRouter = require('./routes/auth');
     app.use("/api", authRouter);
+    //Products Apis
+    const productRouter = require('./routes/product');
+    app.use("/api", productRouter);
 
 });
 
